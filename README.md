@@ -1,2 +1,2 @@
 # python
-第一个文件
+print("hello world")
