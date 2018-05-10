@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script type=text/javascript>
+        $(function() {
+            $('#calculate').click(function(){
+              $.ajax({
+                url: '/aaa',
+                data:{
+                  a: $('#a').val(),
+                  b: $('#b').val()
+                },
+                dataType: 'JSON',
+                type: 'GET',
+                success: function(data){
+                    json = data.re
+                    re = json.split(' ')
+
+                    $("#key").html(re);
+                }
+                });
+             });
+        });
+  </script>
+</head>
+<body>
+
+    <p><button class="btn btn-success" id="calculate">calculate</button>
+    <p id="key">?</p>
+</body>
+</html>
