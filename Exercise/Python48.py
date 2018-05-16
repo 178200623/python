@@ -1,6 +1,5 @@
 #-*- coding:UTF-8 -*-
 #笨办法学编程py3---异常,扫描
-from python.Py48.Py48 import lexicon
 def cover_number(s) :
     try:
         print("this function's value:", s)

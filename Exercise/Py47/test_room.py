@@ -1,5 +1,5 @@
 from unittest import TestCase
-from python.Py47.Py47 import Room
+from python.Exercise.Py47.Py47 import Room
 
 class TestRoom(TestCase):
 
